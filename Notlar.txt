@@ -1,0 +1,22 @@
+***porje oluşturulurken
+
+	A) mvc ekleme
+1-services.controllerwithviews();
+2-endpoints.map
+3- ilgili klasörler oluşturulur(conrollers,views,models,data,configurations,shared,_layout vs)
+4- npm için dosyaları dışarı açma
+	app.UseStaticFiles( new StaticFileOptions 
+            {
+                FileProvider= new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(),"node_modules")),
+                RequestPath="/node_modules"
+            });
+
+	B) entityFramework ekleme
+1-entityFramecore
+2-entityFramecore.tools
+3-entityFramecore.design
+4-entityFramecore.sqlserver
+
+
+Generic Repository 
+	Set();
