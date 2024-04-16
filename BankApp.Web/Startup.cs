@@ -32,7 +32,7 @@ namespace BankApp.Web
         {
             services.AddDbContext<BankContext>(opt =>
             {
-                opt.UseSqlServer("Server=KADIRCAN\\SQLEXPRESS;Database=BankDb;Trusted_Connection=True;Connect Timeout=30;MultipleActiveResultSets=True;");
+                opt.UseSqlServer(Configuration.GetConnectionString("BankApp"));
             });
             //services.AddScoped<IApplicationUserRepository, ApplicationUserRepository>();//dependency
             //services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
